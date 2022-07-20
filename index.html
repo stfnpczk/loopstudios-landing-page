@@ -8,44 +8,38 @@
     <title>Frontend Mentor | Loopstudios landing page</title>
 
     <link rel="stylesheet" href="css/main.css" />
+    <script src="./main.js" defer></script>
   </head>
   <body>
     <div class="page-wrapper">
       <header class="header">
         <div class="header__container">
-          <a class="header__logo" href="#" aria-label="Return to home">
-            <img src="./images/logo.svg" alt="" />
-          </a>
-          <button
-            class="header__hamburger"
-            id="hamburger"
-            aria-label="open navigation menu"
-          >
-            <div>
+          <div class="header__logo">
+            <img src="./images/logo.svg" />
+          </div>
+          <nav class="header__navigation">
+            <button
+              class="header__hamburger"
+              id="hamburger"
+              aria-label="open navigation menu"
+            >
               <span class="header__hamburger-icon"></span>
-            </div>
-          </button>
+            </button>
+
+            <ul class="header__nav-items">
+              <li class="header__nav-item"><a href="#">About</a></li>
+              <li class="header__nav-item"><a href="#">Careers</a></li>
+              <li class="header__nav-item"><a href="#">Events</a></li>
+              <li class="header__nav-item"><a href="#">Products</a></li>
+              <li class="header__nav-item"><a href="#">Support</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="header__navigation" id="mobile-nav">
-          <ul class="header__nav-items">
-            <li class="header__nav-item">
-              <a class="header__link" href="#">ABOUT</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__link" href="#">CAREERS</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__link" href="#">EVENTS</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__link" href="#">PRODUCTS</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__link" href="#">SUPPORT</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header__box">
+          <h1 class="header__heading">Immersive experiences that deliver</h1>
+        </div>
       </header>
+
       <main>
         <section></section>
         <section></section>
