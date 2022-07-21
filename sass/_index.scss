@@ -92,13 +92,23 @@
     background: $black;
     opacity: 0;
     transition: all 1s ease;
+    padding: 159px 24px 0;
   }
 
-  &__nav-items.open {
+  &__nav-items.show {
     height: 100vh;
     opacity: 1;
     visibility: visible;
-    // display: block;
+  }
+
+  &__nav-item {
+    font-family: Josefin Sans;
+    font-size: 24px;
+    line-height: 25px;
+    color: $white;
+    margin: 0 0 24px;
+    text-transform: uppercase;
+
   }
 
   &__box {
