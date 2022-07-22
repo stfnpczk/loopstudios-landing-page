@@ -1,9 +1,9 @@
 /*----------------------------
       layout
  ----------------------------*/
-// body {
-//   position: relative;
-// }
+main {
+  margin: 0 24px 0;
+}
 /*----------------------------
       header section
 ----------------------------*/
@@ -11,8 +11,8 @@
 .header {
   padding: 40px 24px 0;
   background: url(../images/mobile/image-hero.jpg) no-repeat;
-  height: 610px;
-  background-size: 100%;
+  height: 650px;
+  background-size: cover;
 
   &__container {
     display: flex;
@@ -108,7 +108,6 @@
     color: $white;
     margin: 0 0 24px;
     text-transform: uppercase;
-
   }
 
   &__box {
@@ -122,7 +121,39 @@
     font-weight: 300;
     line-height: clamp(30px, 10.1333333333vw, 12.8vw);
     color: $white;
-    text-transform: uppercase;
     max-width: 279px;
+  }
+}
+
+/*----------------------------
+      info section
+----------------------------*/
+
+.info {
+  margin: 96px 0 0;
+
+  &__text {
+    margin: 48px 0 0;
+    text-align: center;
+    color: $black;
+  }
+
+  &__heading {
+    font-family: Josefin Sans;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 32px;
+    color: $black;
+  }
+
+  &__paragraph {
+    font-family: Alata;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    opacity: 0.5;
+    // margin: 16px 0 96px;
+    max-width: 74.4vw;
+    margin:16px auto 96px;
   }
 }
