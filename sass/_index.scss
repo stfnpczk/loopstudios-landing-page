@@ -34,6 +34,8 @@ main {
   &__hamburger {
     display: block;
     position: relative;
+    width: 16px;
+    height: 23px;
     right: 0;
     border: none;
     z-index: 5;
@@ -188,7 +190,7 @@ main {
     background-position: center;
     background-size: cover;
   }
-  
+
   &__item--earth {
     background-image: url(../images/mobile/image-deep-earth.jpg);
   }
@@ -235,5 +237,49 @@ main {
     span {
       display: block;
     }
+  }
+}
+
+/*----------------------------
+      footer section
+----------------------------*/
+
+.footer {
+  background: $black;
+  padding: 56px 51px;
+  display: grid;
+  justify-items: center;
+
+  &__logo img {
+    width: 144px;
+  }
+
+  &__navigation {
+    margin: 32px 0 48px;
+  }
+
+  &__nav-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    color: $white;
+  }
+
+  &__social-media {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__copyright {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+    margin: 16px 0 0;
+    color: hsla(0, 0%, 100%, 0.5);
+    text-align: center;
   }
 }
