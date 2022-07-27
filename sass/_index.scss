@@ -95,6 +95,13 @@ main {
     opacity: 0;
     transition: all 1s ease;
     padding: 159px 24px 0;
+
+    @media only screen and (min-width: $tablet) {
+      all: unset;
+      list-style-type: none;
+      display: flex;
+      gap: 32px;
+    }
   }
 
   &__nav-items.show {
@@ -111,6 +118,14 @@ main {
     color: $white;
     margin: 0 0 24px;
     text-transform: uppercase;
+
+    @media only screen and (min-width: $tablet) {
+      font-family: Alata;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 25px;
+      text-transform: none;
+    }
   }
 
   &__box {
