@@ -198,61 +198,37 @@ main {
     gap: 24px;
   }
 
-  &__item {
-    width: 100%;
-    height: 120px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  &__item--earth {
-    background-image: url(../images/mobile/image-deep-earth.jpg);
-  }
-
-  &__item--arcade {
-    background-image: url(../images/mobile/image-night-arcade.jpg);
-  }
-
-  &__item--soccer {
-    background-image: url(../images/mobile/image-soccer-team.jpg);
-  }
-
-  &__item--grid {
-    background-image: url(../images/mobile/image-grid.jpg);
-  }
-
-  &__item--vr {
-    background-image: url(../images/mobile/image-from-above.jpg);
-  }
-
-  &__item--borealis {
-    background-image: url(../images/mobile/image-pocket-borealis.jpg);
-  }
-
-  &__item--curiosity {
-    background-image: url(../images/mobile/image-curiosity.jpg);
-  }
-
-  &__item--fisheye {
-    background-image: url(../images/mobile/image-fisheye.jpg);
+  &__link-container {
+    position: relative;
+    display: block;
   }
 
   &__heading--three {
+    position: absolute;
     font-size: 24px;
     font-weight: 300;
     line-height: 24px;
 
-    position: relative;
     z-index: 2;
     color: $white;
-    top: 52px;
     left: 20px;
+    bottom: 20px;
 
     span {
       display: block;
     }
   }
+}
+
+picture::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%);
+  
 }
 
 /*----------------------------
