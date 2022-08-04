@@ -14,9 +14,19 @@
   height: 650px;
   background-size: cover;
 
+  @media only screen and (min-width: $tablet) {
+  background: url(../images/desktop/image-hero.jpg) no-repeat;
+  background-size:cover;
+  height: 100vh;
+  max-height: 650px;
+  background-position: center;
+  padding: 40px 35px 0;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__logo {
@@ -125,6 +135,7 @@
       font-weight: 300;
       line-height: 25px;
       text-transform: none;
+      margin: 0;
     }
   }
 
@@ -132,14 +143,19 @@
     margin: 163px 0 0;
     border: 2px solid #ffffff;
     padding: 24px;
+
+    @media only screen and (min-width: $tablet) {
+      margin: 123px 0 0 ;
+      width: clamp(475px, 67.8571428571vw, 977px);
+    }
   }
 
   &__heading {
-    font-size: clamp(32px, 10.6666666667vw, 13.3333333333vw);
+    font-size: clamp(32px, 10.6666666667vw, 48px);
     font-weight: 300;
-    line-height: clamp(30px, 10.1333333333vw, 12.8vw);
+    line-height: clamp(30px, 10.1333333333vw, 46px);
     color: $white;
-    max-width: 279px;
+    max-width: 182.375px;
   }
 }
 
