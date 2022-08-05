@@ -251,6 +251,11 @@
 .creations {
   margin: 96px 0 96px;
 
+  @media only screen and (min-width: $tablet) {
+    max-width: 770px;
+    margin: 96px auto 0;
+  }
+
   &__heading {
     font-size: 32px;
     font-weight: 300;
@@ -264,6 +269,10 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
+
+    @media only screen and (min-width: $tablet) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   &__link-container {
