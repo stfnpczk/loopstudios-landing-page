@@ -1,16 +1,17 @@
 $tablet: 768px;
-$desktop: 1024px;
+$desktop: 1200px;
 
 $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
 $gray: hsl(0, 0%, 55%);
 $dark-gray: hsl(0, 0%, 41%);
+$gray-layer: rgba(0, 0, 0, 0.4);
 
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 
 body {
   min-height: 100vh;
-  font-family: 'Alata', sans-serif;
+  font-family: "Alata", sans-serif;
   font-weight: 300;
   overflow-x: hidden;
 }
@@ -22,7 +23,7 @@ h4,
 h5,
 h6 {
   color: $black;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -43,5 +44,3 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-
-
