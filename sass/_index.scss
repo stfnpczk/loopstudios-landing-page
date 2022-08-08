@@ -12,6 +12,16 @@ main {
     margin: 0 clamp(120px, 11.71875vw, 164px) 0;
   }
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-wrapper {
+  max-width: 1600px;
+}
 /*----------------------------
       header section
 ----------------------------*/
@@ -360,10 +370,10 @@ main {
     }
 
     @media only screen and (min-width: $desktop) {
-      font-size: 32px;
-      line-height: 32px;
-      left: 40px;
-      bottom: 34px;
+      font-size: clamp(24px, 2.5vw, 32px);
+      line-height: clamp(24px, 2.5vw, 32px);
+      left: clamp(20px, 3.3333333333vw, 40px);
+      bottom: clamp(20px, 2.8333333333vw, 34px);
     }
   }
   &__button {
@@ -411,8 +421,25 @@ picture::after {
 .footer {
   background: $black;
   padding: 56px 51px;
-  display: grid;
-  justify-items: center;
+  // display: grid;
+  // justify-items: center;
+
+  @media only screen and (min-width: $desktop) {
+    // grid-template-columns: 1fr auto auto 1fr;
+    padding: 44px clamp(120px, 11.71875vw, 164px);
+  }
+
+  &__container {
+    display: grid;
+    justify-items: center;
+
+    @media only screen and (min-width: $desktop) {
+      grid-template-columns: auto auto;
+      justify-content: space-between;
+      justify-items: unset;
+      gap: 22px;
+    }
+  }
 
   &__logo img {
     width: 144px;
@@ -420,6 +447,10 @@ picture::after {
 
   &__navigation {
     margin: 32px 0 48px;
+
+    @media only screen and (min-width: $desktop) {
+      margin: 0;
+    }
   }
 
   &__nav-items {
@@ -430,20 +461,35 @@ picture::after {
     font-weight: 300;
     line-height: 25px;
     color: $white;
+
+    @media only screen and (min-width: $desktop) {
+      flex-direction: row;
+      gap: 32px;
+    }
   }
 
   &__social-media {
     display: flex;
     align-items: center;
     gap: 16px;
+
+    @media only screen and (min-width: $desktop) {
+      grid-row: 1;
+      grid-column: 2;
+      justify-content: flex-end;
+    }
   }
 
   &__copyright {
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 15px;
     line-height: 25px;
+    font-weight: 300;
     margin: 16px 0 0;
     color: hsla(0, 0%, 100%, 0.5);
     text-align: center;
+
+    @media only screen and (min-width: $desktop) {
+      margin: 0;
+    }
   }
 }
