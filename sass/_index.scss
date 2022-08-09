@@ -485,6 +485,10 @@ picture::after {
     }
   }
 
+  &__link {
+    text-align: center;
+  }
+
   &__social-media {
     display: flex;
     align-items: center;

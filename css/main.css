@@ -845,6 +845,9 @@ picture::after {
     gap: 2rem;
   }
 }
+.footer__link {
+  text-align: center;
+}
 .footer__social-media {
   display: flex;
   align-items: center;
