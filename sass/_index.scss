@@ -2,14 +2,14 @@
       layout
  ----------------------------*/
 main {
-  margin: 0 24px 0;
+  margin: 0 1.5rem 0;
 
   @media only screen and (min-width: $tablet) {
-    margin: 0 30px 0;
+    margin: 0 1.875rem 0;
   }
 
   @media only screen and (min-width: $desktop) {
-    margin: 0 clamp(120px, 11.71875vw, 164px) 0;
+    margin: 0 clamp(7.5rem, 11.71875vw, 10.25rem) 0;
   }
 }
 
@@ -20,17 +20,17 @@ body {
 }
 
 .page-wrapper {
-  max-width: 1600px;
+  max-width: 100rem;
 }
 /*----------------------------
       header section
 ----------------------------*/
 
 .header {
-  padding: 40px 24px 0;
+  padding: 2.5rem 1.5rem 0;
   background-image: linear-gradient($gray-layer, $gray-layer),
     url("../images/mobile/image-hero.jpg");
-  height: 650px;
+  height: 40.625rem;
   background-size: cover;
   position: relative;
 
@@ -38,14 +38,14 @@ body {
     background-image: linear-gradient($gray-layer, $gray-layer),
       url("../images/desktop/image-hero.jpg");
     height: 100vh;
-    max-height: 610px;
+    max-height: 38.125rem;
     background-position: top center;
-    padding: 40px 35px 0;
+    padding: 2.5rem 2.1875rem 0;
   }
 
   @media only screen and (min-width: $desktop) {
-    padding: 64px clamp(120px, 11.5vw, 165px) 0;
-    max-height: 586px;
+    padding: 4rem clamp(7.5rem, 11.5vw, 10.3125rem) 0;
+    max-height: 36.625rem;
   }
 
   &__container {
@@ -59,18 +59,18 @@ body {
   }
 
   &__logo img {
-    height: 24px;
+    height: 1.5rem;
 
     @media only screen and (min-width: $desktop) {
-      height: 32px;
+      height: 2rem;
     }
   }
 
   &__hamburger {
     display: block;
     position: relative;
-    width: 16px;
-    height: 23px;
+    width: 1rem;
+    height: 1.4375rem;
     right: 0;
     border: none;
     z-index: 5;
@@ -85,24 +85,24 @@ body {
   &__hamburger-icon:after {
     content: "";
     position: absolute;
-    height: 3px;
-    width: 16px;
+    height: 0.1875rem;
+    width: 1rem;
     background: $white;
     transition: all 0.4s ease;
     display: block;
   }
 
   &__hamburger-icon {
-    top: 10px;
-    right: 0px;
+    top: 0.625rem;
+    right: 0rem;
   }
 
   &__hamburger-icon:before {
-    top: -5px;
+    top: -0.3125rem;
   }
 
   &__hamburger-icon:after {
-    top: 5px;
+    top: 0.3125rem;
   }
 
   &__hamburger--active &__hamburger-icon {
@@ -128,13 +128,13 @@ body {
     background: $black;
     opacity: 0;
     transition: all 1s ease;
-    padding: 159px 24px 0;
+    padding: 9.9375rem 1.5rem 0;
 
     @media only screen and (min-width: $tablet) {
       all: unset;
       list-style-type: none;
       display: flex;
-      gap: 32px;
+      gap: 2rem;
     }
   }
 
@@ -147,50 +147,50 @@ body {
 
   &__nav-item {
     font-family: Josefin Sans;
-    font-size: 24px;
-    line-height: 25px;
+    font-size: 1.5rem;
+    line-height: 1.5625rem;
     color: $white;
-    margin: 0 0 24px;
+    margin: 0 0 1.5rem;
     text-transform: uppercase;
 
     @media only screen and (min-width: $tablet) {
       font-family: Alata;
-      font-size: 15px;
+      font-size: 0.9375rem;
       font-weight: 300;
-      line-height: 25px;
+      line-height: 1.5625rem;
       text-transform: none;
       margin: 0;
     }
   }
 
   &__box {
-    margin: 163px 0 0;
-    border: 2px solid $white;
-    padding: 24px;
+    margin: 10.1875rem 0 0;
+    border: 0.125rem solid $white;
+    padding: 1.5rem;
 
     @media only screen and (min-width: $tablet) {
-      margin: 123px 0 0;
-      width: clamp(475px, 50vw, 977px);
+      margin: 7.6875rem 0 0;
+      width: clamp(29.6875rem, 50vw, 61.0625rem);
     }
 
     @media only screen and (min-width: $desktop) {
-      margin: 129px 0 0;
-      width: 570px;
-      padding: 40px 38px 27px 40px;
+      margin: 8.0625rem 0 0;
+      width: 35.625rem;
+      padding: 2.5rem 2.375rem 1.6875rem 2.5rem;
     }
   }
 
   &__heading {
-    font-size: clamp(32px, 10.6666666667vw, 48px);
+    font-size: clamp(2rem, 10.6666666667vw, 3rem);
     font-weight: 300;
-    line-height: clamp(30px, 10.1333333333vw, 46px);
+    line-height: clamp(1.875rem, 10.1333333333vw, 2.875rem);
     color: $white;
-    max-width: 182.375px;
+    max-width: 11.3984rem;
 
     @media only screen and (min-width: $desktop) {
-      font-size: 72px;
-      line-height: 70px;
-      max-width: 650px;
+      font-size: 4.5rem;
+      line-height: 4.375rem;
+      max-width: 40.625rem;
     }
   }
 }
@@ -200,18 +200,18 @@ body {
 ----------------------------*/
 
 .info {
-  margin: 96px 0 0;
+  margin: 6rem 0 0;
 
   @media only screen and (min-width: $tablet) {
     display: grid;
     grid-template-columns: 51% 15% 34%;
     align-items: end;
-    max-width: 770px;
-    margin: 96px auto 0;
+    max-width: 48.125rem;
+    margin: 6rem auto 0;
 
     @media only screen and (min-width: $desktop) {
       max-width: unset;
-      margin: 160px 0 0;
+      margin: 10rem 0 0;
     }
   }
 
@@ -239,7 +239,7 @@ body {
   }
 
   &__text {
-    margin: 48px 0 0;
+    margin: 3rem 0 0;
     text-align: center;
     color: $black;
 
@@ -248,44 +248,44 @@ body {
       grid-row: 1;
       background: white;
       margin: 0;
-      padding: clamp(20px, 2.8571428571vw, 2.8571428571vw) 0 0
-        clamp(20px, 2.8571428571vw, 2.8571428571vw);
+      padding: clamp(1.25rem, 2.8571428571vw, 2.8571428571vw) 0 0
+        clamp(1.25rem, 2.8571428571vw, 2.8571428571vw);
     }
 
     @media only screen and (min-width: $desktop) {
-      padding: clamp(30px, 6.7vw, 96px) 0 0 clamp(30px, 6.7vw, 96px);
+      padding: clamp(1.875rem, 6.7vw, 6rem) 0 0 clamp(1.875rem, 6.7vw, 6rem);
       text-align: left;
     }
   }
 
   &__heading {
     font-family: Josefin Sans;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 300;
-    line-height: 32px;
+    line-height: 2rem;
     color: $black;
 
     @media only screen and (min-width: $desktop) {
-      font-size: clamp(32px, 3.5vw, 48px);
-      line-height: clamp(32px, 3.5vw, 48px);
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      line-height: clamp(2rem, 3.5vw, 3rem);
     }
   }
 
   &__paragraph {
     font-family: Alata;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 1.5625rem;
     opacity: 0.5;
     max-width: 74.4vw;
-    margin: 16px auto 96px;
+    margin: 1rem auto 6rem;
 
     @media only screen and (min-width: $tablet) {
       margin: 0 auto;
     }
 
     @media only screen and (min-width: $desktop) {
-      margin: clamp(0px, 2vw, 28px) 0 0;
+      margin: clamp(0rem, 2vw, 1.75rem) 0 0;
     }
   }
 }
@@ -295,39 +295,39 @@ body {
 ----------------------------*/
 
 .creations {
-  margin: 96px 0 96px;
+  margin: 6rem 0 6rem;
 
   @media only screen and (min-width: $tablet) {
-    max-width: 770px;
-    margin: 96px auto 0;
+    max-width: 48.125rem;
+    margin: 6rem auto 0;
   }
 
   @media only screen and (min-width: $desktop) {
     max-width: unset;
     display: grid;
-    margin: 184px 0;
+    margin: 11.5rem 0;
   }
 
   &__heading {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 300;
-    line-height: 32px;
+    line-height: 2rem;
     text-align: center;
     color: $black;
-    margin: 0 0 48px;
+    margin: 0 0 3rem;
 
     @media only screen and (min-width: $desktop) {
-      font-size: 48px;
-      line-height: 48px;
+      font-size: 3rem;
+      line-height: 3rem;
       text-align: left;
-      margin: 0 0 80px;
+      margin: 0 0 5rem;
     }
   }
 
   &__gallery {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 1.5rem;
 
     @media only screen and (min-width: $tablet) {
       grid-template-columns: 1fr 1fr;
@@ -336,7 +336,7 @@ body {
     @media only screen and (min-width: $desktop) {
       grid-column: 1 /3;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 30px;
+      gap: 1.875rem;
     }
   }
 
@@ -352,37 +352,37 @@ body {
 
   &__heading--three {
     position: absolute;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 300;
-    line-height: 24px;
+    line-height: 1.5rem;
 
     z-index: 2;
     color: $white;
-    left: 20px;
-    bottom: 20px;
+    left: 1.25rem;
+    bottom: 1.25rem;
 
     span {
       display: block;
     }
 
     @media only screen and (min-width: $desktop) {
-      font-size: clamp(24px, 2.5vw, 32px);
-      line-height: clamp(24px, 2.5vw, 32px);
-      left: clamp(20px, 3.3333333333vw, 40px);
-      bottom: clamp(20px, 2.8333333333vw, 34px);
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      line-height: clamp(1.5rem, 2.5vw, 2rem);
+      left: clamp(1.25rem, 3.3333333333vw, 2.5rem);
+      bottom: clamp(1.25rem, 2.8333333333vw, 2.125rem);
     }
   }
   &__button {
     display: flex;
     justify-content: center;
-    margin: 34px auto 96px;
-    border: 1px solid $black;
-    padding: 13px 0;
-    width: clamp(157px, 41.8666666667vw, 400px);
-    font-size: 14px;
+    margin: 2.125rem auto 6rem;
+    border: 0.0625rem solid $black;
+    padding: 0.8125rem 0;
+    width: clamp(9.8125rem, 41.8666666667vw, 25rem);
+    font-size: 0.875rem;
     font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 5px;
+    line-height: 0.875rem;
+    letter-spacing: 0.3125rem;
     background: transparent;
     transition: 0.5s ease;
 
@@ -391,7 +391,7 @@ body {
       margin: 0;
       grid-column: 2;
       align-self: flex-start;
-      width: 153px;
+      width: 9.5625rem;
       margin-left: auto;
     }
   }
@@ -440,10 +440,10 @@ picture::after {
 
 .footer {
   background: $black;
-  padding: 56px 51px;
+  padding: 3.5rem 3.1875rem;
 
   @media only screen and (min-width: $desktop) {
-    padding: 44px clamp(120px, 11.71875vw, 164px);
+    padding: 2.75rem clamp(7.5rem, 11.71875vw, 10.25rem);
   }
 
   &__container {
@@ -454,16 +454,16 @@ picture::after {
       grid-template-columns: auto auto;
       justify-content: space-between;
       justify-items: unset;
-      gap: 22px;
+      gap: 1.375rem;
     }
   }
 
   &__logo img {
-    width: 144px;
+    width: 9rem;
   }
 
   &__navigation {
-    margin: 32px 0 48px;
+    margin: 2rem 0 3rem;
 
     @media only screen and (min-width: $desktop) {
       margin: 0;
@@ -473,22 +473,22 @@ picture::after {
   &__nav-items {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    font-size: 15px;
+    gap: 1rem;
+    font-size: 0.9375rem;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 1.5625rem;
     color: $white;
 
     @media only screen and (min-width: $desktop) {
       flex-direction: row;
-      gap: 32px;
+      gap: 2rem;
     }
   }
 
   &__social-media {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
 
     @media only screen and (min-width: $desktop) {
       grid-row: 1;
@@ -498,10 +498,10 @@ picture::after {
   }
 
   &__copyright {
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
     font-weight: 300;
-    margin: 16px 0 0;
+    margin: 1rem 0 0;
     color: hsla(0, 0%, 100%, 0.5);
     text-align: center;
 
