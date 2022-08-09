@@ -1,1 +1,27 @@
 // reusable components
+
+.link {
+  @media only screen and (min-width: $tablet) {
+    position: relative;
+  }
+}
+
+.link::before {
+  background-color: white;
+  bottom: -10px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in;
+  width: 100%;
+}
+
+.link:hover::before {
+  transform: scaleX(0.45);
+}
+
+.link--sm:hover::before {
+    transform: scaleX(1);
+}

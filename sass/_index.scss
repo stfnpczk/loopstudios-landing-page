@@ -28,7 +28,6 @@ body {
 
 .header {
   padding: 40px 24px 0;
-  // background: url(../images/mobile/image-hero.jpg) no-repeat;
   background-image: linear-gradient($gray-layer, $gray-layer),
     url("../images/mobile/image-hero.jpg");
   height: 650px;
@@ -36,7 +35,6 @@ body {
   position: relative;
 
   @media only screen and (min-width: $tablet) {
-    // background: url(../images/desktop/image-hero.jpg) no-repeat;
     background-image: linear-gradient($gray-layer, $gray-layer),
       url("../images/desktop/image-hero.jpg");
     height: 100vh;
@@ -67,10 +65,6 @@ body {
       height: 32px;
     }
   }
-
-  // &__navigation {
-  //   // position: relative;
-  // }
 
   &__hamburger {
     display: block;
@@ -127,7 +121,6 @@ body {
   &__nav-items {
     position: absolute;
     visibility: hidden;
-    // display: none;
     top: 0;
     left: 0;
     width: 100%;
@@ -172,7 +165,7 @@ body {
 
   &__box {
     margin: 163px 0 0;
-    border: 2px solid #ffffff;
+    border: 2px solid $white;
     padding: 24px;
 
     @media only screen and (min-width: $tablet) {
@@ -211,9 +204,7 @@ body {
 
   @media only screen and (min-width: $tablet) {
     display: grid;
-    // grid-template-columns: 1fr minmax(153px, auto) 1fr;
     grid-template-columns: 51% 15% 34%;
-    // grid-template-rows: 36.6% 63.4%;
     align-items: end;
     max-width: 770px;
     margin: 96px auto 0;
@@ -352,6 +343,11 @@ body {
   &__link-container {
     position: relative;
     display: block;
+    transition: 0.5s ease;
+  }
+
+  &__link-container:hover {
+    transform: scale(1.05);
   }
 
   &__heading--three {
@@ -380,13 +376,15 @@ body {
     display: flex;
     justify-content: center;
     margin: 34px auto 96px;
-    border: 1px solid black;
+    border: 1px solid $black;
     padding: 13px 0;
     width: clamp(157px, 41.8666666667vw, 400px);
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 5px;
+    background: transparent;
+    transition: 0.5s ease;
 
     @media only screen and (min-width: $desktop) {
       grid-row: 1;
@@ -395,8 +393,12 @@ body {
       align-self: flex-start;
       width: 153px;
       margin-left: auto;
-      // width: unset;
     }
+  }
+
+  &__button:hover {
+    background: $black;
+    color: $white;
   }
 }
 
@@ -414,6 +416,24 @@ picture::after {
   );
 }
 
+.creations__link-container:hover:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.55)
+  );
+}
+
+.creations__gallery a:hover h3 {
+  color: black;
+}
+
 /*----------------------------
       footer section
 ----------------------------*/
@@ -421,11 +441,8 @@ picture::after {
 .footer {
   background: $black;
   padding: 56px 51px;
-  // display: grid;
-  // justify-items: center;
 
   @media only screen and (min-width: $desktop) {
-    // grid-template-columns: 1fr auto auto 1fr;
     padding: 44px clamp(120px, 11.71875vw, 164px);
   }
 
